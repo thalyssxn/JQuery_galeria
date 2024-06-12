@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #5f27cd; /*cor de fundo*/
+    padding: 16px 0; /*espaçamento*/
+    color: #fff; /*cor de texto*/
+    display: flex;  /*display flexível (botão acima) */
+    border-bottom: 16px solid #341f97; /*borda*/
+    justify-content: center;  /*alinhar conteúdo (alinhar h1)*/
+    text-transform: uppercase; /*deixa o h1 em maiúsculo*/
+    font-style: italic; /*ytexto em itálico*/
+
+}
+
+header button{
+    margin-left: 16px; /*faaz a separação do h1"galeria de fotos" do botão "nova imagme*/
+
+}
+
+form{
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center; /*fazendo o alinhamento de texto (centralizando)*/
+    display: none;
+}
+
+form h2{
+    margin-bottom: 16px; /*espaçamento de "inserir nova imagem para os obotões" */
+
+}
+
+input,
+button{
+    padding: 8px /*espaçamento*/
+}
+
+button{
+    background-color: #009432;
+    border: none; /*retira a borda dos botões*/
+    font-weight: bold; /*coloca o texto dos botões em negrito*/
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer; /*quando passar com o mouse por cima, trcoa o cursor do mouse*/
+
+}
+
+#botao-cancelar{
+    background-color: red; /*Após adicionar o id "botao-cancelar" podemos modificar especificamente ele*/
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap; /* qaundo chegar ao limite, crie-se uma nova linha*/
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden; /* todo o conteúdo que ultrapassar esse limite não deverá ser exibido, em que o eixo y (vertical) e o "hidden" para ocultar quais itens ultrapassarem */
+
+}
+
+ul li img{
+    width: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /* ocultar a opacidade */
+}
+
+.overlay-imagem-link a{
+    color: #fff;
+    text-decoration: none; /* remove o underline */
+}
